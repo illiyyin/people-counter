@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Hello, world!</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <!--     Fonts and icons     -->
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+  <!-- Material Kit CSS -->
+  <link type="text/css" href="{{ url_for('static', filename='css/material-dashboard.css')}}" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="wrapper ">
+    <div class="row" style="padding-top: 15%;margin: 0;">
+      <div class="col-md-4"></div>
+      <div class="col-md-4">
+        <div class="card card-nav-tabs text-center">
+          <div class="card-header card-header-info">
+            <h4>Login Page</h4>
+          </div>
+          <div class="card-body">
+            <!-- <h4 class="card-title">Special title treatment</h4> -->
+            <!-- <p class="card-text">With supporting text below as a natural lead-in to additional content.</p> -->
+            <form style="padding: 25px 0px;">
+              <div class="form-group">
+                <div>
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text">
+                       <i class="material-icons">person</i>
+                      </span>
+                    </div>
+                      <input type="text" class="form-control" placeholder="Username">
+                  </div>
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text">
+                       <i class="material-icons">vpn_key</i>
+                      </span>
+                    </div>
+                      <input type="password" class="form-control" placeholder="Password">
+                  </div>
+                  
+                </div>
+              </div>
+            </form>
+            <a href="{{ url_for('dashboard')}}" class="btn btn-success">Login</a>
+          </div>
+          <div class="card-footer text-muted">
+            <!-- 2 days ago -->
+            <div class="stats"></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4"></div>
+    </div> </div>
+</body>
+
+</html>
